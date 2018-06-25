@@ -1,0 +1,164 @@
+.card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  height: 390px;
+  margin-bottom: 59px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.card:hover {
+  box-shadow: 0 0 50px -8px black;
+}
+
+.flex-parent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.name {
+  font-family: Oswald, sans-serif;
+  color: #000;
+  font-size: 49px;
+  line-height: 66px;
+  font-weight: 400;
+  text-indent: 12px;
+}
+
+.name.footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  font-family: 'Droid Serif', serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.name.footer.center {
+  margin-top: 260px;
+  text-align: center;
+}
+
+.name.footer.link {
+  display: inline-block;
+  width: 96px;
+  font-family: Inconsolata, monospace;
+}
+
+.name.footer.link:hover {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.name.footer.coming-soon {
+  margin-bottom: 93px;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.name.footer.coming-soon.back {
+  color: #4e80ff;
+}
+
+.name.footer.coming-soon.back:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.name.header {
+  margin-top: 5px;
+}
+
+.name.header:hover {
+  font-style: normal;
+}
+
+.footer-links {
+  display: block;
+  height: 70px;
+  margin-top: 257px;
+  margin-left: 295px;
+}
+
+.go-back {
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .name.footer.coming-soon {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 390px;
+    height: 290px;
+    margin-top: 50px;
+  }
+  .card:hover {
+    box-shadow: 0 0 50px -8px red;
+  }
+  .name.footer {
+    font-size: 15px;
+  }
+  .name.footer.link {
+    line-height: 21px;
+  }
+  .name.footer.link:hover {
+    font-size: 15px;
+  }
+  .name.footer.coming-soon {
+    font-size: 21px;
+  }
+  .name.header {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .footer-links {
+    margin-top: 137px;
+    margin-bottom: -35px;
+    margin-left: 306px;
+  }
+}
+
+@media (max-width: 479px) {
+  .card {
+    width: 325px;
+    height: 390px;
+    margin-top: 0px;
+  }
+  .card:hover {
+    box-shadow: 0 0 50px -8px red;
+  }
+  .name.footer.coming-soon {
+    font-size: 16px;
+  }
+  .footer-links {
+    margin-top: 232px;
+    margin-left: 243px;
+    padding-top: 0px;
+  }
+}
+
